@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Swapping Of Image</title>
+<script type="text/javascript">
+function swap()
+{
+var leftID  =  document.getElementById('pic_left');
+    rightId =  document.getElementById('pic_right');
+    leftSRC=leftID.src;
+	rightSRC=rightID.src;
+    leftID.src=rightSRC;
+    rightID.src=leftSRC;	
+}
+
+
+</script>
+</head>
+
+<body>
+
+<div align="center">
+<img id="pic_left" src="pic4.jpg">
+<img id="pic_right" src="pic6.jpg">
+<form>
+<input type="button" value="SwapImages" onclick="swap();">
+</form>
+</div>
+</body>
+</html>

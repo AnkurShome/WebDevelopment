@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Swapping the Image</title>
+<script type="Text/Javascript">
+var image_tracker='pic2';
+function change()
+{
+var image=Document.GetElementById('Circle')
+if(image_tracker=='pic2')
+{
+image.src='pic1.jpeg';
+image_tracker='pic1';
+}
+else
+{
+image.src='pic2.jpeg';
+image_tracker='pic2';
+}
+}
+var timer= setInterval('change();',1000);
+function stop()
+{
+clearInterval(timer);
+}
+</script>
+</head>
+<body>
+<img src="pic1" 
+
+
+</body>
+
+
+</html>
